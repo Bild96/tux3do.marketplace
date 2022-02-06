@@ -8,7 +8,7 @@
 
 #### cd tux3do.marketplace
 
-install using NPM or Yarn
+* install using NPM or Yarn
 
 #### npm install
 
