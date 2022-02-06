@@ -1,3 +1,4 @@
+/* pages/create-item.js */
 import { useState } from 'react'
 import { ethers } from 'ethers'
 import { create as ipfsHttpClient } from 'ipfs-http-client'
@@ -63,7 +64,6 @@ export default function CreateItem() {
     let event = tx.events[0]
     let value = event.args[2]
     let tokenId = value.toNumber()
-
     const price = ethers.utils.parseUnits(formInput.price, 'ether')
   
     /* then list the item for sale on the marketplace */
